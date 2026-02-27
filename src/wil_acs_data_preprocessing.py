@@ -9,7 +9,8 @@ Original file is located at
 
 #1. load data
 import pandas as pd
-df = pd.read_csv('/content/Dataset_ATS_v2.csv')#load path
+df = pd.read_csv('../data/0_raw/Dataset_ATS_v2.csv')#switch path from colab to git warehouse
+#df = pd.read_csv('/content/Dataset_ATS_v2.csv')#load path
 df.head()
 
 #we can add a self-defined feature, because tenure implies a potential new user
