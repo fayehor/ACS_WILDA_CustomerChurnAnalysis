@@ -98,7 +98,16 @@ binary_cats = [col for col in categorical_cols if col != 'Contract']
 df_binary = df[binary_cats].apply(lambda x: x.astype('category').cat.codes)
 
 df_processed = pd.concat([df_numerical, df_binary, df_contract, df[label_column]], axis=1)
-df_processed.to_csv('/Dataset_processed_for_ANN.csv', index=False)
+
+# add module that no longer creates a file in a fixed directory
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+processed_path = BASE_DIR / 'data' / '2_processed' / 'Dataset_processed_for_ANN.csv'
+
+df_processed.to_csv(processed_path, index=False)
+
+#df_processed.to_csv('/Dataset_processed_for_ANN.csv', index=False) # fixed directory
 
 df_processed
 
