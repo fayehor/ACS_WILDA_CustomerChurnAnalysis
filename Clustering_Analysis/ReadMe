@@ -1,0 +1,52 @@
+# Clustering Analysis: Customer Segmentation
+
+## Overview
+This project performs customer segmentation using K-Means clustering.  
+The analysis is based on a pre-processed dataset where categorical variables are encoded and numerical variables are scaled.  
+
+The objective is to identify meaningful customer groups and support business decision-making for churn management.
+
+---
+
+## Files Included
+
+### 1. Clustering_Analysis_Notebook.ipynb
+This notebook contains the complete workflow of the clustering analysis.  
+It includes data loading, preprocessing verification, model training, and visualisation.
+
+### 2. Clustering_Analysis_SourceCode.py
+This file provides the Python script version of the clustering process.  
+It includes the implementation of K-Means training and cluster assignment.
+
+### 3. Clustering_Analysis_Visualization_Report.pdf
+This report presents the clustering results and interpretation.  
+It includes visual analysis such as the Elbow Method, PCA projection, and cluster comparison.
+
+### 4. customer_segments_with_labels.csv
+This dataset contains the processed customer data with assigned cluster labels.  
+Each row represents a customer, and the `Cluster` column indicates the segment membership.
+
+### 5. kmeans_model.pkl
+This is the trained K-Means clustering model.  
+It can be loaded and reused for prediction on new data.
+
+---
+
+## Model Training Summary
+
+- Algorithm: K-Means Clustering  
+- Optimal number of clusters: 4 (determined using Elbow Method)  
+- Input data: Pre-processed dataset with scaled numerical features and encoded categorical features  
+
+The model groups customers based on similarity in service usage and contract characteristics.
+
+---
+
+## How to Load the Model
+
+The trained model can be loaded using the following code:
+
+```python
+import joblib
+
+model = joblib.load("kmeans_model.pkl")
