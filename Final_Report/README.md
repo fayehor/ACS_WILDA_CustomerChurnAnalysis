@@ -7,19 +7,19 @@ The final report summarises the end-to-end data analytics process, including dat
 
 ## Files Included
 
-- **Final_Report_Team2.docx**  
+- **Final_Report_Team2**  
   The complete final report combining all sections of the project.
 
-- **Final_Summary.docx**  
+- **Final_Summary**  
   A concise summary of key findings, insights, and outcomes.
 
-- **Final_Factors.docx**  
+- **Final_Factors**  
   Analysis of the main factors contributing to customer churn.
 
-- **Final_Recommendations.docx**  
+- **Final_Recommendations**  
   Data-driven recommendations to reduce churn and improve retention.
 
-- **Final_Limitations.docx**  
+- **Final_Limitations**  
   Discussion of project limitations and potential areas for future improvement.
 
 ## Key Highlights
